@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@media(max-width: 430px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .cabecalho {
+    background: #FFFFFF;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .banner {
+    border: solid black 2px;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/imgbanner.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title-banner {
+    color: #E51B3E;
+    font-size: 2.7rem;
+  }
+
+  .text-banner {
+    color: #FFFFFF;
+    /* text-align: justify; */
+    margin: 0.2rem 0 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .button-explorer {
+    padding: 1rem;
+    font-size: 1rem;
+    background: none;
+    border: solid 2px #33BB69;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+
+  }
+
+}
