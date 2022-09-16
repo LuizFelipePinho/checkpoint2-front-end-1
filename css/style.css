@@ -20,7 +20,7 @@
   .banner {
     border: solid black 2px;
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,11 +28,14 @@
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/imgbanner.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 1000px;
   }
 
   .title-banner {
     color: #E51B3E;
     font-size: 2.7rem;
+
   }
 
   .text-banner {
