@@ -128,9 +128,8 @@
   }
 
   .button-explorer:hover {
-    color: #33BB69;
     cursor: pointer;
     background: linear-gradient( #33bb691b, #33bb691b);
-    transition: 0.3s;
+    transition: 2s;
   }
 }
