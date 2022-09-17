@@ -1,0 +1,71 @@
+
+.modal-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.modal-header {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  border-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+
+}
+
+.logo-modal {
+  align-self: center;
+  width: 50%;
+  
+}
+
+.person-size-button span{
+  padding-right: 1rem;
+  margin: 0;
+}
+
+.modal-body {
+  border: solid white 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+#email {
+  margin-bottom: 1rem;
+  
+}
+
+.input-form {
+  height: 2rem;
+  border-radius: 0.3rem;
+  border: solid #A4A4A4 1px ;
+}
+
+.modal-footer {
+  border-style: none;
+  width: 100%;
+
+}
+
+.perso-justify-button {
+  width: 100%;
+  background: #33BB69;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+}
