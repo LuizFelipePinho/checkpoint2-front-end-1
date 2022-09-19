@@ -13,8 +13,8 @@
   header {
     height: 80px;
     width: 102%;
-    background-color: #fcfafa;
-    margin-top: 10px;
+    background-color:#fffafa;
+    margin-top: 10px; 
     margin-left: 16px;
   }
   
@@ -72,94 +72,72 @@
   header {
     height: 80px;
     width: 102%;
-    top: 100px;
+  
     background-color:#fcfafa;
+    position: fixed;
   }
   
   #logo img {
     width: 180px;
-    height: 80px;
+    height: 55px;
+    margin-top: 15px;
+    margin-left: 61px;
+    margin-bottom: 15px;
   }
 
+     
+ #check{
+  display: none;
+ }
 
-  /* #check {
+label {
     display: none;
   }
-  
-  label {
-    font-size: 1.5em;
-    position: fixed;
-    top: 5px;
-    padding: 15px;
-    right: 15px;
-    color: rgba(0, 0, 0, 0.5);
-  } */
-  
-  nav ul {
+
+ nav ul {
     list-style: none;
-    background-color: #DCDCDC;
+    width: 100%;    
     height: 100vh;
-    position: fixed;
-    top: 80px;
-    right: -100%;
-    width: 100%;      
-    transition: all 0.6s;
-  }
-
-
-  #check:checked ~ ul {
-    right: 0;
+    top: 380px;
+    margin-top: -75px;
+    margin-left: 660px; 
+    display: flex;
+    flex-direction: block;
+   justify-content: flex-start;
+   align-items: flex-start;
+   
   }
 
   nav ul li {
     padding: 20px;
-    border-bottom: 1px solid #a9a9a9; 
+    border-bottom: 2px solid #f8dddd; 
+    float: right; 
+    border: 0;
+       
   }
   
+  nav ul li a .home {
+    color: #f80606;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    margin-right: 70px;
+    
+  }
+
   nav ul li a {
     text-decoration: none;
     font-family: 'Open Sans';
-    color: rgb(218, 17, 17);
-  }
-/*      
-  .Container-Flex {
-    max-width: 1280px;
-  }
-
-  
-  header {
-    height: 120px;
-  }
-
-  #logo img {
-    width: 160px;
-    height: 110px;
-    margin-top: 30px;
-  }
-
-  label {
-    display: none;
-  }
-
-  nav ul {
-    position: static;
-    height: auto;
-    background-color: transparent;
-    margin-top: 40px;
-  }
-
-  nav ul li {
-    float: left;
-    border: 0;
-  }
-
-  nav ul li a {
-    color: #343538;
+    color: #080808;
+    margin-right: 70px;
+    
+    
   }
 
   nav ul li a:hover {
-    color: #c00000;
-  } */
+    color: #574848;
+  } 
+
+ 
 
  
 }
