@@ -1,0 +1,241 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex:opsz@8..144&display=swap');
+
+@media (max-width: 1280px) {
+	body {
+		font-family: 'Roboto', sans-serif;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	main {
+		font-family: 'Roboto', sans-serif;
+		display: auto;
+		text-align: center;
+
+	}
+
+	/* class */
+
+	.card {
+		margin: 5%;
+		border-radius: 5%;
+		display: inline-block;
+		width: 60%;
+		height: 50%;
+		filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
+		padding-top: 40%;
+		background-image: url(https://www.dreamworks.com/storage/movies/shrek/shrek-he-digital.png);
+		background-size: cover;
+		background-position: 50%;
+	}
+
+	div .card-sinopse {
+		padding: 5%;
+		text-align: center;
+		border-radius: 5%;
+		height: 100%;
+		background: #F4F4F4;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 21px;
+
+		color: rgba(0, 0, 0, 0.75);
+	}
+
+	.card-title {
+		padding-bottom: 5%;
+		text-align: left;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+
+		color: #000000;
+
+	}
+
+	.music-info {
+		text-align: left;
+	}
+
+	.card-btn {
+		margin-top: 5%;
+		padding: 1% 40%;
+		background: #33BB69;
+		color: #FFFFFF;
+		border: none;
+		border-radius: 10%;
+
+	}
+}
+
+@media (max-width: 430) {
+	body {
+		font-family: 'Roboto', sans-serif;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	main {
+		font-family: 'Roboto', sans-serif;
+		display: auto;
+		text-align: center;
+
+	}
+
+	/* class */
+
+	.card {
+		margin: 5%;
+		/* border: 1px solid black; */
+		border-radius: 5%;
+		display: inline-block;
+		width: 329px;
+		height: 511.14px;
+		filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
+		padding-top: 70%;
+		background-image: url(https://www.dreamworks.com/storage/movies/shrek/shrek-he-digital.png);
+		background-size: cover;
+		background-position: 50%;
+	}
+
+	div .card-sinopse {
+		padding: 5%;
+		text-align: center;
+		border-radius: 5%;
+		height: 100%;
+		background: #F4F4F4;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 21px;
+
+		color: rgba(0, 0, 0, 0.75);
+	}
+
+	.card-title {
+		padding-bottom: 5%;
+		text-align: left;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+
+		color: #000000;
+
+	}
+
+	.music-info {
+		text-align: left;
+	}
+
+	.card-btn {
+		margin-top: 5%;
+		padding: 1% 40%;
+		background: #33BB69;
+		color: #FFFFFF;
+		border: none;
+		border-radius: 10%;
+
+	}
+	.teaser {
+		display: flex;
+		align-self: center;
+	}
+
+	.produtors {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 1280px) {
+	body {
+		font-family: 'Roboto', sans-serif;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	main {
+		font-family: 'Roboto', sans-serif;
+		display: auto;
+		text-align: center;
+
+	}
+
+	/* class */
+
+	.card {
+		margin: 5%;
+		/* border: 1px solid black; */
+		border-radius: 5%;
+		display: inline-block;
+		filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
+		padding-top: 15%;
+		background-image: url(https://www.dreamworks.com/storage/movies/shrek/shrek-he-digital.png);
+		background-size: cover;
+		background-position: 50%;
+		width: 20%;
+		height: 50%;
+	}
+
+	div .card-sinopse {
+		padding: 5%;
+		text-align: center;
+		border-radius: 5%;
+		height: 100%;
+		background: #F4F4F4;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 21px;
+
+		color: rgba(0, 0, 0, 0.75);
+	}
+
+	.card-title {
+		padding-bottom: 5%;
+		text-align: left;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+
+		color: #000000;
+
+	}
+
+	.music-info {
+		text-align: left;
+	}
+
+	.card-btn {
+		margin-top: 5%;
+		padding: 1% 40%;
+		background: #33BB69;
+		color: #FFFFFF;
+		border: none;	
+		border-radius: 10%;
+
+	}
+
+	.teaser {
+		display: flex;
+		align-self: center;
+	}
+}
