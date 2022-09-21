@@ -69,13 +69,14 @@
 		text-align: left;
 	}
 
-	div .card-btn {
+	.card-btn {
 		
 		padding: 1% 40%;
 		background: #33BB69;
 		color: #FFFFFF;
 		border: none;
 		border-radius: 10%;
+		text-decoration: none;
 	}
 
 	.teaser {
@@ -190,7 +191,7 @@
 		color: #FFFFFF;
 		border: none;	
 		border-radius: 10%;
-
+		text-decoration: none;
 	}
 
 	.teaser {
