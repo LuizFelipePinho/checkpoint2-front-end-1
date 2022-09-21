@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex:opsz@8..144&display=swap');
 
-@media (min-width: 430px) {
+@media (max-width: 430px) {
 	body {
 		font-family: 'Roboto', sans-serif;
 		display: flex;
@@ -36,9 +36,7 @@
 		height: 511.14px;
 		filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
 		padding-top: 70%;
-		background-image: url(https://www.dreamworks.com/storage/movies/shrek/shrek-he-digital.png);
 		background-size: cover;
-		background-position: 50%;
 	}
 
 	div .card-sinopse {
@@ -50,8 +48,10 @@
 		font-weight: 300;
 		font-size: 12px;
 		line-height: 21px;
-
 		color: rgba(0, 0, 0, 0.75);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.card-title {
@@ -69,14 +69,13 @@
 		text-align: left;
 	}
 
-	.card-btn {
-		margin-top: 5%;
+	div .card-btn {
+		
 		padding: 1% 40%;
 		background: #33BB69;
 		color: #FFFFFF;
 		border: none;
 		border-radius: 10%;
-
 	}
 
 	.teaser {
@@ -102,7 +101,7 @@
 	}
 
 	#three {
-		background-image: url(./images/lor.jpeg);
+		background-image: url(./images/lor.png);
 	}
 
 	#four {
@@ -118,7 +117,7 @@
 	}
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 430px) {
 	body {
 		font-family: 'Roboto', sans-serif;
 		display: flex;
@@ -146,11 +145,10 @@
 		display: inline-block;
 		filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
 		padding-top: 15%;
-		background-image: url(https://www.dreamworks.com/storage/movies/shrek/shrek-he-digital.png);
 		background-size: cover;
 		background-position: 50%;
-		width: 20%;
-		height: 50%;
+		width: 300px;
+		height: 450px;
 	}
 
 	div .card-sinopse {
@@ -164,6 +162,9 @@
 		line-height: 21px;
 
 		color: rgba(0, 0, 0, 0.75);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.card-title {
@@ -206,7 +207,7 @@
 	}
 
 	#three {
-		background-image: url(./images/lor.jpeg);
+		background-image: url(./images/lor.png);
 	}
 
 	#four {
@@ -215,6 +216,10 @@
 
 	#five {
 		background-image: url(./images/inter.jpeg);
+	}
+
+	#six {
+		background-image: url(./images/shrek.png);
 	}
 }
 
