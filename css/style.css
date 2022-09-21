@@ -77,6 +77,10 @@
 		border-radius: 10%;
 
 	}
+
+	#one .back-img {
+		background-image: url(./images/sonho-liberdade.jpeg	);
+	}
 }
 
 @media (max-width: 430) {
@@ -237,5 +241,9 @@
 	.teaser {
 		display: flex;
 		align-self: center;
+	}
+
+	#one {
+		background-image: url(http://127.0.0.1:5500/checkpoint2-front-end-1/css/images/sonho-liberdade.jpeg)
 	}
 }
