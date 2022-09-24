@@ -14,36 +14,43 @@
 <body>
 
     <header class="cabecalho">
-        <!-- <div class="container"> -->
-            <!-- <div id="logo" class="logo"> -->
-                <!-- <img class="logo-header" src="img/logo-header.svg" alt="logo do site."> -->
-            <!-- </div> -->
-            <!-- <nav class="check-itens" >
-                <input type="checkbox" id="check">
-                <label for="check">&#9776;</label>
-                <ul>
-                    <li><a class="home"href="#home">Home</a></li>
-                    <li><a href="#Itens">Itens</a></li>
-                    <li><a href="#Sobre nós">Sobre nós</a></li>
-                    <li><a href="#Login">Login</a></li>
-                </ul>
-            </nav> -->
-        <!-- </div> -->
-
         <nav class="navbar navbar-dark perso-style ">
           <div class="container-fluid">
             <img class="logo-header" src="img/logo-header.svg" alt="logo do site.">
-            <button class="navbar-toggler perso-align" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+           
+            <button class="navbar-toggler perso-align menu-burguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
               <span class="material-symbols-outlined color-person">
                 menu
                 </span>
               <!-- <span class="navbar-toggler-icon bg-dark color-person">X</span> -->
             </button>
+
+            <nav class="nav-container-perso"> 
+              <!-- <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> -->
+              <ul>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Itens</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link active active" aria-current="page" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Login</a>
+                </li>
+              </ul>
+            </nav>
+
+
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
               <div class="offcanvas-header">
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
+            
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   
                   <li class="nav-item">
@@ -61,11 +68,14 @@
                   </li>
                 </ul>
               </div>
+
+              
+
             </div>
           </div>
         </nav>
 
-
+        
     </header>
     
   <section class="container-banner">
