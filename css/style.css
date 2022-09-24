@@ -20,7 +20,6 @@
   }
 
   .container-banner {
-    border: solid black 2px;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -31,7 +30,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 1000px;
   }
 
   .info-banner {
@@ -81,7 +79,6 @@
   } 
 
   .container-banner {
-    border: solid black 2px;
     width: 100%;
     height: 100vh;
     padding: 0 10% 0 10%;
@@ -140,12 +137,22 @@
 /* -------*------*---------*---------*---------*---------*---------  */
 
 /* HEADER */
+.perso-style {
+  background-color: #fffafa;
+  height: 20vh;
+  width: 100%;
+  /* position: fixed; */
+}
 
 
+
+.color-person {
+  color: black; 
+}
 
 /* MOBILE */
 @media (max-width: 430px) {
-  .cabecalho {
+  /* .cabecalho {
     height: 15vh;
     width: 100%;
     background-color: #fffafa;
@@ -153,8 +160,10 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    
+  } */
 
-  }
+  
 
   .logo-header {
     height: 70%;
@@ -162,12 +171,13 @@
 
   }
 
-
+/* 
   #check {
     display: none;
   }
 
   .check-itens {
+   
     width: 30%;
     height: 100%;
     display: flex;
@@ -190,15 +200,14 @@
     right: -100%;
     width: 100%;
     transition: all 0.4s;
+    margin-top: 90%;
+
   }
 
 
-  
-
   #check:checked ~ ul {
     right: 0;
-    margin-top: 55vh;
-    /* background-color: #dcdcdc; */
+
   }
 
   nav ul {
@@ -215,47 +224,60 @@
     text-decoration: none;
     font-family: "Open Sans";
     color: rgb(218, 17, 17);
-  }
+  } */
 }
 
 
 /* TABLETE */
-/* @media (max-width: 760px) {
-  header {
-    height: 80px;
-    width: 102%;
+@media (min-width: 431px) {
+  
+  .cabecalho {
+    height: 15vh;
+    width: 100%;
     background-color: #fffafa;
-    margin-top: 10px;
-    margin-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
   }
 
-  #logo img {
-    width: 167px;
-    height: 80px;
+  .logo-header {
+    height: 70%;
+    width: 60%;
+
   }
+
+  .check-itens {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 
   #check {
     display: none;
   }
 
   label {
-    font-size: 1.5em;
+    font-size: 1.9em;
     position: fixed;
-    top: 10px;
-    padding: 10px;
-    right: 80px;
     color: rgba(0, 0, 0, 0.5);
   }
 
   nav ul {
     list-style: none;
     background-color: #dcdcdc;
-    height: 20vh;
     position: fixed;
     right: -100%;
     width: 100%;
-    transition: all 0.6s;
+    transition: all 0.4s;
+    margin-top: 79%;
+
   }
+  
 
   #check:checked ~ ul {
     right: 0;
@@ -271,7 +293,7 @@
     font-family: "Open Sans";
     color: rgb(218, 17, 17);
   }
-} */
+} 
 
 
 /* DESKTOP */
