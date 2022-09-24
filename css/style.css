@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-@media(max-width: 430px) {
+@media(max-width: 640px) {
   body {
     font-family: 'Roboto', sans-serif;
   }
@@ -18,7 +20,6 @@
   }
 
   .container-banner {
-    border: solid black 2px;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -29,7 +30,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 1000px;
   }
 
   .info-banner {
@@ -79,7 +79,7 @@
   } 
 
   .container-banner {
-    border: solid black 2px;
+    margin-bottom: 1000px ;
     width: 100%;
     height: 100vh;
     padding: 0 10% 0 10%;
@@ -132,4 +132,88 @@
     background: linear-gradient( #33bb691b, #33bb691b);
     transition: 2s;
   }
+
 }
+
+/* -------*------*---------*---------*---------*---------*---------  */
+
+/* HEADER */
+.perso-style {
+  background-color: #fffafa;
+  height: 20vh;
+  width: 100%;
+  /* position: fixed; */
+}
+
+
+
+.color-person {
+  color: black; 
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+
+  .logo-header {
+    height: 70%;
+    width: 60%;
+
+  }
+
+  .nav-container-perso {
+    display: none;
+  }
+
+  .color-person {
+    color: black;
+    font-size: 2.2rem;
+  }
+
+}
+
+/* TABLET */
+@media (min-width: 641px) {
+  .logo-header {
+    width: 36%;
+  }
+
+
+  .nav-container-perso {
+    display: none;
+  }
+
+  .color-person {
+    color: black;
+    font-size: 6vw;
+  }
+
+} 
+
+
+/* DESKTOP */
+@media (min-width: 800px) {
+  .logo-header {
+    width: 20%;
+  }
+  .menu-burguer {
+    display: none;
+  }
+  
+  .nav-container-perso {
+    display: block;
+    width: 50%;
+    height: 100%;
+
+  }
+
+  .nav-container-perso ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 1.6vw;
+  }
+  
+} 
