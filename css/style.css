@@ -1,9 +1,130 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* container do modal de login  */
+.modal-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*  header do modal de login*/
+.modal-header {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  border-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* box onde está inserido a logo no modal de login */
+.box-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* logo da modal de login */
+.logo-modal {
+  align-self: center;
+  width: 50%;
+}
+
+/* botão de fechar o modal de login */
+.person-size-button span {
+  padding-right: 1rem;
+  margin: 0;
+}
+
+/* corpo do modal de login */
+.modal-body {
+  border: solid white 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* formulario do modal */
+.form-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+/* campo de email */
+#email {
+  margin-bottom: 1rem;
+}
+
+/* todos os inputs do form da tela de login */
+.input-form {
+  height: 2rem;
+  border-radius: 0.3rem;
+  border: solid #a4a4a4 1px;
+}
+
+/* footer do modal de login */
+.modal-footer {
+  border-style: none;
+  width: 100%;
+}
+
+/* botao do banner */
+.perso-justify-button {
+  width: 100%;
+  background: #33bb69;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+}
+
+/* header*/
+.perso-header {
+  background-color: #fffafa;
+  height: 18vh;
+  width: 100%;
+}
+
+/* envolve o icone de buguer */
+.menu-burguer {
+  border: none;
+}
+
+/* icone do menu burguer */
+.icon-burguer {
+  color: black;
+}
+
+/* cores dos links na versão burguer */
+.active-person {
+  color: white;
+}
+
+/* container do banner */
+.container-banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 
 /* Footer */
 .contatos {
@@ -67,4 +188,148 @@
   font-weight: 400;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .logo-header {
+    width: 50%;
+  }
+
+  .nav-container-perso {
+    display: none;
+  }
+
+  .icon-burguer {
+    font-size: 2.2rem;
+  }
+
+  .info-banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-banner {
+    color: #e51b3e;
+    font-size: 2.7rem;
+  }
+
+  .text-banner {
+    color: #ffffff;
+    margin: 0.2rem 0 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+
+  .button-explorer {
+    padding: 1rem;
+    font-size: 1rem;
+    background: none;
+    border: solid 2px #33bb69;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  }
+}
+
+/* TABLET */
+@media (min-width: 641px) {
+  .logo-header {
+    width: 30%;
+  }
+
+  .nav-container-perso {
+    display: none;
+  }
+
+  .icon-burguer {
+    font-size: 6vw;
+  }
+
+  .info-banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-banner {
+    color: #e51b3e;
+    font-size: 2.7rem;
+    align-self: flex-start;
+  }
+
+  .text-banner {
+    color: #ffffff;
+    margin: 0.2rem 0 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    align-self: flex-start;
+  }
+
+  .button-explorer {
+    padding: 1rem 4rem 1rem 4rem;
+    font-size: 1rem;
+    background: none;
+    border: solid 1px #33bb69;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+    align-self: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  }
+
+  .button-explorer:hover {
+    cursor: pointer;
+    background: linear-gradient(#33bb691b, #33bb691b);
+    transition: 2s;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 800px) {
+  .logo-header {
+    width: 17%;
+  }
+
+  .menu-burguer {
+    display: none;
+  }
+
+  .nav-container-perso {
+    display: block;
+    width: 50%;
+    height: 100%;
+  }
+
+  .nav-container-perso ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 1.4vw;
+  }
+
+  .nav-container-perso ul li:hover {
+    color: #e51b3e;
+    transition: 1ms;
+  }
+
+  .title-banner {
+    color: #e51b3e;
+    font-size: 3.2rem;
+    align-self: flex-start;
+  }
+
+  .text-banner {
+    color: #ffffff;
+    margin: 0.2rem 0 1rem 0;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    align-self: flex-start;
+  }
 }
