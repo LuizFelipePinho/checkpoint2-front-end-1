@@ -1,3 +1,141 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex:opsz@8..144&display=swap');
+
+@media (max-width: 430px) {
+	body {
+		font-family: 'Roboto', sans-serif;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	main {
+		font-family: 'Roboto', sans-serif;
+		display: auto;
+		text-align: center;
+
+	}
+
+	/* class */
+
+	
+}
+
+@media (min-width: 430px) {
+	body {
+		font-family: 'Roboto', sans-serif;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	main {
+		font-family: 'Roboto', sans-serif;
+		display: auto;
+		text-align: center;
+
+	}
+
+	/* class */
+
+	.card {
+		margin: 5%;
+		/* border: 1px solid black; */
+		border-radius: 5%;
+		display: inline-block;
+		filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.1));
+		padding-top: 15%;
+		background-size: cover;
+		background-position: 50%;
+		width: 300px;
+		height: 450px;
+	}
+
+	div .card-sinopse {
+		padding: 5%;
+		text-align: center;
+		border-radius: 5%;
+		height: 100%;
+		background: #F4F4F4;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 21px;
+
+		color: rgba(0, 0, 0, 0.75);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.card-title {
+		padding-bottom: 5%;
+		text-align: left;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+
+		color: #000000;
+
+	}
+
+	.music-info {
+		text-align: left;
+		height: 150px;
+	}
+
+	.card-btn {
+		margin-top: 5%;
+		padding: 1% 40%;
+		background: #33BB69;
+		color: #FFFFFF;
+		border: none;	
+		border-radius: 10%;
+		text-decoration: none;
+	}
+
+	.teaser {
+		display: flex;
+		align-self: center;
+	}
+
+	#one {
+		background-image: url(../img/cards/sonho-liberdade.jpeg)
+	}
+	
+	#two {
+		background-image: url(../img/cards/imperio.jpeg);
+	}
+
+	#three {
+		background-image: url(../img/cards/lor.png);
+	}
+
+	#four {
+		background-image: url(../img/cards/clube.jpeg);
+	}
+
+	#five {
+		background-image: url(../img/cards/inter.jpeg);
+	}
+
+	#six {
+		background-image: url(../img/cards/shrek.png);
+	}
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
@@ -119,12 +257,12 @@ body {
   justify-content: center;
   align-items: center;
   padding: 15%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../img/banner.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/background-banner.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-bottom: 500px;
+  margin-bottom: 5vh;
 }
 
 
@@ -214,6 +352,7 @@ body {
   .title-banner {
     color: #e51b3e;
     font-size: 2.7rem;
+    font-weight: 700;
   }
 
   .text-banner {
@@ -234,6 +373,7 @@ body {
     font-weight: 500;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   }
+  
 }
 
 /* TABLET */
@@ -259,6 +399,8 @@ body {
     color: #e51b3e;
     font-size: 2.7rem;
     align-self: flex-start;
+    font-weight: 700;
+  
   }
 
   .text-banner {
@@ -324,6 +466,8 @@ body {
     color: #e51b3e;
     font-size: 3.2rem;
     align-self: flex-start;
+    font-weight: 700;
+  
   }
 
   .text-banner {
