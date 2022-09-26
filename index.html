@@ -1,93 +1,355 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  
-  <main>
-    <h1>Itens</h1>
-    <div class="card" id="one">
-      <div class="back-img">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>DH Music</title>
+  </head>
     
-      </div>
-      <div class="card-sinopse">
-        <h3 class="card-title">Um Sonho de Liberdade</h3>
-        <p class="music-info">Dois homens presos se reúnem ao longo de vários anos, encontrando consolo e eventual redenção através de atos de
-        decência comum.
-        </p>
-        <a href="./pages/cover1.html" class="card-btn">Abrir</a>
-      </div>
-    </div>
+  <body>
+    <!-- cabeçalho -->
+    <header class="cabecalho">
+      <!-- container navegate -->
+      <nav class="navbar navbar perso-header">
+        <div class="container-fluid">
+          <img
+            class="logo-header"
+            src="img/logo-header.svg"
+            alt="logo do site."
+          />
 
-    <div class="card" id="two">
-      <div class="back-img">
-    
-      </div>
-      <div class="card-sinopse">
-        <h3 class="card-title">O Império Contra-Ataca</h3>
-        <p class="music-info">Os rebeldes derrotaram o Império no planeta congelado Hoth. Luke Skywalker começa a treinar como um Jedi com Yoda,
-        enquanto seus amigos são perseguidos por Darth Vader.
-        </p>
-        <a href="./pages/cover2.html" class="card-btn">Abrir</a>
-      </div>
-    </div>
+          <button
+            class="navbar-toggler perso-align menu-burguer"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+          >
+            <span class="material-symbols-outlined icon-burguer"> menu </span>
+          </button>
 
-    <div class="card" id="three">
-      <div class="back-img">
-    
+          <!-- navegate desktop -->
+          <nav class="nav-container-perso">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Itens</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Sobre</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                  data-whatever="@getbootstrap"
+                  href="#"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- navegate mobile -->
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active-person" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active-person" href="#">Itens</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active-person" aria-current="page" href="#"
+                    >Sobre</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active-person"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    data-whatever="@getbootstrap"
+                    href="#"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- modal de login -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="box-logo">
+                <img class="logo-modal" src="/img/logo.png" alt="" srcset="" />
+              </div>
+              <button
+                type="button"
+                class="close person-size-button"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="form-modal" action="">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-form" />
+
+                <label for="password">Senha</label>
+                <input type="password" id="password" class="input-form" />
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary perso-justify-button"
+              >
+                Entrar
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card-sinopse">
-        <h3 class="card-title">O Senhor dos Anéis: As Duas Torres</h3>
-        <p class="music-info">Enquanto Frodo e Sam estão perto de Mordor com a ajuda de Gollum, a divida comunhão luta contra Saruman e os Isengards.</p>
-        <a href="./pages/cover3.html" class="card-btn">Abrir</a>
-      </div>
-    </div>
-    </div>
-    <div class="card" id="four">
-      <div class="back-img">
-    
-      </div>
-      <div class="card-sinopse">
-        <h3 class="card-title">Clube da Luta</h3>
-        <p class="music-info">Um trabalhador de escritório e um fabricante de sabonetes que cuidam do diabo formam um clube de luta clandestino que
-        evolui para algo muito maior.
+    </header>
+
+    <!-- container do banner -->
+    <section class="container-banner">
+      <div class="info-banner">
+        <h1 class="title-banner">DH Music</h1>
+        <p class="text-banner">
+          Confira a maior coletânia de músicas que a Digital House tem a te
+          oferecer
         </p>
-        <a href="./pages/cover4.html" class="card-btn">Abrir</a>
+        <button class="button-explorer">Explorar</button>
       </div>
-    </div>
-    
-    <div class="card" id="five">
-      <div class="back-img">
-    
+    </section>
+
+    <!-- Cards -->
+    <main class="container-card">
+      <h1 class="title-container-card">Itens</h1>
+      <div class="card" id="one">
+        <div class="back-img">
+      
+        </div>
+        <div class="card-sinopse">
+          <h3 class="card-title">Um Sonho de Liberdade</h3>
+          <p class="music-info">Dois homens presos se reúnem ao longo de vários anos, encontrando consolo e eventual redenção através de atos de
+          decência comum.
+          </p>
+          <a href="./pages/cover1.html" class="card-btn">Abrir</a>
+        </div>
       </div>
-      <div class="card-sinopse">
-        <h3 class="card-title">Interestelar</h3>
-        <p class="music-info">Uma equipe de exploradores viaja através de um buraco de minhoca no espaço, na tentativa de garantir a sobrevivência da
-        humanidade.
-        </p>
-        <a href="./pages/cover5.html" class="card-btn">Abrir</a>
-      </div>
-    </div>
-    
-    <div class="card" id="six">
-      <div class="back-img">
-    
-      </div>
-      <div class="card-sinopse">
-        <h3 class="card-title">Shrek</h3>
-        <p class="music-info">Um cavaleiro exila as criaturas de um conto de fadas para o pântano de um ogro, que em sua ânsia de
-          recuperar seu território faz um pacto para conseguir que uma linda princesa aceda a ser a namorada do cavalheiro.
-        </p>
-        <a href="./pages/cover6.html" class="card-btn">Abrir</a>
-      </div>
-    </div>
-    </div>
-  </main>
   
-</body>
+      <div class="card" id="two">
+        <div class="back-img">
+      
+        </div>
+        <div class="card-sinopse">
+          <h3 class="card-title">O Império Contra-Ataca</h3>
+          <p class="music-info">Os rebeldes derrotaram o Império no planeta congelado Hoth. Luke Skywalker começa a treinar como um Jedi com Yoda,
+          enquanto seus amigos são perseguidos por Darth Vader.
+          </p>
+          <a href="./pages/cover2.html" class="card-btn">Abrir</a>
+        </div>
+      </div>
+  
+      <div class="card" id="three">
+        <div class="back-img">
+      
+        </div>
+        <div class="card-sinopse">
+          <h3 class="card-title">O Senhor dos Anéis: As Duas Torres</h3>
+          <p class="music-info">Enquanto Frodo e Sam estão perto de Mordor com a ajuda de Gollum, a divida comunhão luta contra Saruman e os Isengards.</p>
+          <a href="./pages/cover3.html" class="card-btn">Abrir</a>
+        </div>
+      </div>
+      </div>
+      <div class="card" id="four">
+        <div class="back-img">
+      
+        </div>
+        <div class="card-sinopse">
+          <h3 class="card-title">Clube da Luta</h3>
+          <p class="music-info">Um trabalhador de escritório e um fabricante de sabonetes que cuidam do diabo formam um clube de luta clandestino que
+          evolui para algo muito maior.
+          </p>
+          <a href="./pages/cover4.html" class="card-btn">Abrir</a>
+        </div>
+      </div>
+      
+      <div class="card" id="five">
+        <div class="back-img">
+      
+        </div>
+        <div class="card-sinopse">
+          <h3 class="card-title">Interestelar</h3>
+          <p class="music-info">Uma equipe de exploradores viaja através de um buraco de minhoca no espaço, na tentativa de garantir a sobrevivência da
+          humanidade.
+          </p>
+          <a href="./pages/cover5.html" class="card-btn">Abrir</a>
+        </div>
+      </div>
+      
+      <div class="card" id="six">
+        <div class="back-img">
+      
+        </div>
+        <div class="card-sinopse">
+          <h3 class="card-title">Shrek</h3>
+          <p class="music-info">Um cavaleiro exila as criaturas de um conto de fadas para o pântano de um ogro, que em sua ânsia de
+            recuperar seu território faz um pacto para conseguir que uma linda princesa aceda a ser a namorada do cavalheiro.
+          </p>
+          <a href="./pages/cover6.html" class="card-btn">Abrir</a>
+        </div>
+      </div>
+      </div>
+    </main>
+
+
+    <!-- rodapé -->
+    <footer>
+      <div class="contatos">
+        <div class="dev">
+          <p class="name">Andrea Santos</p>
+          <p class="responsavel">
+            Responsável pelo desenvolvimento do Header
+          </p>
+          <div>
+            <a href="https://github.com/Andrea-Santos20">
+              <img src="img/icon-github.svg" class="icon-footer" alt="img1"
+            /></a>
+            <a href="https://www.linkedin.com/in/dea-santos-dev/">
+              <img src="img/icon-link.svg" class="icon-footer" alt="img1"
+            /></a>
+          </div>
+        </div>
+
+        <div class="dev">
+          <p class="name">Caio Faustino</p>
+          <p class="responsavel">Responsável pelo desenvolvimento de Cards</p>
+          <div>
+            <a href="https://github.com/caio-faustino">
+              <img src="img/icon-github.svg" class="icon-footer" alt="img2"
+            /></a>
+            <a href="https://linkedin.com/in/caio-faustino17/">
+              <img src="img/icon-link.svg" class="icon-footer" alt="img2"
+            /></a>
+          </div>
+        </div>
+
+        <div class="dev">
+          <p class="name">Luiz Felipe Pinho</p>
+          <p class="responsavel">
+            Responsável pelo desenvolvimento do Banner e Login
+          </p>
+          <div>
+            <a href="https://github.com/LuizFelipePinho">
+              <img src="img/icon-github.svg" class="icon-footer" alt="img3"
+            /></a>
+            <a href="https://www.linkedin.com/in/luiz-felipe-pinho/">
+              <img src="img/icon-link.svg" class="icon-footer" alt="img3"
+            /></a>
+          </div>
+        </div>
+
+        <div class="dev">
+          <p class="name">Valter Martins</p>
+          <p class="responsavel">
+            Responsável pelo desenvolvimento do Footer
+          </p>
+
+          <div>
+            <a href="https://www.github.com/valter-ice">
+              <img src="img/icon-github.svg" class="icon-footer" alt="img4"
+            /></a>
+            <a href="https://www.linkedin.com/in/valter-martins-0a3096110">
+              <img src="img/icon-link.svg" class="icon-footer" alt="img4"
+            /></a>
+          </div>
+        </div>
+        <div class="rodape">
+          <p class="info-rodape">
+            Checkpoint 02 desenvolvido em 2022 grupo 04
+          </p>
+        </div>
+      </div>
+  </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
