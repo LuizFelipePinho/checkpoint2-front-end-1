@@ -112,27 +112,27 @@
 	}
 
 	#one {
-		background-image: url(./images/sonho-liberdade.jpeg)
+		background-image: url(../img/cards/sonho-liberdade.jpeg)
 	}
 	
 	#two {
-		background-image: url(./images/imperio.jpeg);
+		background-image: url(../img/cards/imperio.jpeg);
 	}
 
 	#three {
-		background-image: url(./images/lor.png);
+		background-image: url(../img/cards/lor.png);
 	}
 
 	#four {
-		background-image: url(./images/clube.jpeg);
+		background-image: url(../img/cards/clube.jpeg);
 	}
 
 	#five {
-		background-image: url(./images/inter.jpeg);
+		background-image: url(../img/cards/inter.jpeg);
 	}
 
 	#six {
-		background-image: url(./images/shrek.png);
+		background-image: url(../img/cards/shrek.png);
 	}
 }
 
@@ -262,6 +262,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  margin-bottom: 5vh;
 }
 
 
