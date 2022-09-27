@@ -1,16 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex:opsz@8..144&display=swap');
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex:opsz@8..144&display=swap');
-
-body {
-	max-width: 80%;
-	margin: auto;
-	font-family: 'Roboto', sans-serif;
-}
+/* SINOPSE/TRAILER */
 
 main {
 	max-width: 90%;
@@ -37,32 +32,38 @@ iframe {
 }
 
 h1 {
-	font-weight: 900;
-	font-size: 48px;
-	line-height: 75px;
+	font-weight: bold;
+	font-size: 26px;
+	text-align: center;
+	line-height: 25px;
 	color: #000000;
+	margin: 15px;
 }
 
 h2 {
-	color: #000000;
-	font-size: 18px;
-}
-
-h3 {
-	color: #000000;
-	font-size: 12px;
-	color: rgba(0, 133, 255, 0.75);
+	color: #3586e2;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 16px;
 	
 }
 
+
 p {
-	color: rgba(0, 0, 0, 0.75);
-	font-size: 14px;
-	padding-bottom: 2%;
+	text-align: justify;
 }
 
 .trailer {
 	margin-top: 5%;
 	color: #000000;
 	font-size: 18px;
+}
+
+@media (min-width: 430px) {
+	.card-sinopse {
+	
+	 font-size: 28px;
+	 text-align: justify;
+	}
+
 }
